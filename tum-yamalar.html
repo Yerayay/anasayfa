@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tüm Yamalar | YERAYAY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cards.css">
+    <style>
+
+        /* ===== ARAMA ALANI ===== */
+        
+        .search-box {
+            width: 300px;
+            margin: 40px auto;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 15px 20px;
+            border-radius: 30px;
+            border: 1px solid #2a2a35;
+            background: #1a1a22;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+        
+        .search-box input:focus {
+            border-color: #00ffc3;
+            box-shadow: 0 0 15px #00ffc340;
+        }
+        
+        .search-box button {
+            padding: 5px 10px;
+            border-radius: 30px;
+            border: 1px solid #2a2a35;
+            background: #1a1a22;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .search-box button:hover {
+            border-color: #00ffc3;
+            background: #00ffc320;
+        }
+        
+        </style>
+        
+        
+
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<header>
+    <h1>TÜM YAMALAR</h1>
+    <p>Platformlara Göre Arşiv</p>
+</header>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Yama ara...">
+    <button onclick="resetSearch()">Temizle</button>
+</div>
+
+
+
+<main class="yama-container">
+
+        <!-- ================= PLAYSTATION ================= -->
+        <section id="playstation" class="platform-section">
+            <h2 class="platform-title">PlayStation</h2>
+    
+            <div class="card" onclick="window.open('https://www.technopat.net/sosyal/konu/life-is-strange-before-the-storm-remastered-tuerkce-yama-playstation-4.4024539/', '_blank')"><img src="Görseller/1.jpg"><div class="card-content"><h3>Life is Strange: Beforo The Strom Remastared Türkçe Yama</h3><p>Türkçe Çeviri & Port: Yerayay</p><span class="tag">PlayStation 4</span></div></div>
+            <div class="card"><img src="images/ps2.jpg"><div class="card-content"><h3>PS Oyun 2</h3><p>Bilgi</p><span class="tag">PlayStation 4</span></div></div>
+            <div class="card" ><img src="images/ps3.jpg"><div class="card-content"><h3>PS Oyun 3</h3><p>Bilgi</p><span class="tag">PlayStation</span></div></div>
+            <div class="card"><img src="images/ps4.jpg"><div class="card-content"><h3>PS Oyun 4</h3><p>Bilgi</p><span class="tag">PlayStation</span></div></div>
+            <div class="card"><img src="images/ps5.jpg"><div class="card-content"><h3>PS Oyun 5</h3><p>Bilgi</p><span class="tag">PlayStation</span></div></div>
+        </section>
+
+            <!-- ================= MOBIL ================= -->
+    <section id="mobil" class="platform-section">
+        <h2 class="platform-title">Android (Mobil)</h2>
+
+        <div class="card"><img src="images/m1.jpg"><div class="card-content"><h3>Mobil 1</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m2.jpg"><div class="card-content"><h3>Mobil 2</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m3.jpg"><div class="card-content"><h3>Mobil 3</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m4.jpg"><div class="card-content"><h3>Mobil 4</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 5</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 6</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 7</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 8</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 9</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 10</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+        <div class="card"><img src="images/m5.jpg"><div class="card-content"><h3>Mobil 11</h3><p>Bilgi</p><span class="tag">Mobil</span></div></div>
+    </section>
+
+        <!-- ================= XBOX ================= -->
+        <section id="xbox" class="platform-section">
+            <h2 class="platform-title">Xbox</h2>
+    
+            <div class="card"><img src="images/x1.jpg"><div class="card-content"><h3>Xbox 1</h3><p>Bilgi</p><span class="tag">Xbox</span></div></div>
+           
+        </section>
+
+            <!-- ================= PC ================= -->
+    <section id="pc" class="platform-section">
+        <h2 class="platform-title">PC</h2>
+
+        <div class="card"><img src="images/p1.jpg"><div class="card-content"><h3>PC 1</h3><p>Bilgi</p><span class="tag">PC</span></div></div>
+        
+    </section>
+
+    <!-- ================= NINTENDO ================= -->
+    <section id="nintendo" class="platform-section">
+        <h2 class="platform-title">Nintendo</h2>
+        <!-- 4 tane daha kopyala -->
+        <div class="card"><img src="images/game2.jpg"><div class="card-content"><h3>Henüz Yok</h3><p>Henüz Yok</p><span class="tag">Nintendo</span></div></div>
+
+    </section>
+
+
+
+
+
+
+
+
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    
+        const searchInput = document.getElementById("searchInput");
+    
+        searchInput.addEventListener("keyup", function() {
+    
+            let filter = searchInput.value.toLowerCase();
+            let cards = document.querySelectorAll(".card");
+            let sections = document.querySelectorAll(".platform-section");
+    
+            cards.forEach(card => {
+    
+                let title = card.querySelector("h3")?.textContent.toLowerCase() || "";
+                let info = card.querySelector("p")?.textContent.toLowerCase() || "";
+                let tag = card.querySelector(".tag")?.textContent.toLowerCase() || "";
+    
+                if (title.includes(filter) || info.includes(filter) || tag.includes(filter)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+    
+            });
+    
+            sections.forEach(section => {
+    
+                let visibleCards = section.querySelectorAll(".card");
+                let anyVisible = false;
+    
+                visibleCards.forEach(card => {
+                    if (card.style.display !== "none") {
+                        anyVisible = true;
+                    }
+                });
+    
+                section.style.display = anyVisible ? "block" : "none";
+            });
+    
+        });
+    
+    });
+    
+    function resetSearch() {
+    
+        document.getElementById("searchInput").value = "";
+    
+        let cards = document.querySelectorAll(".card");
+        let sections = document.querySelectorAll(".platform-section");
+    
+        cards.forEach(card => {
+            card.style.display = "block";
+        });
+    
+        sections.forEach(section => {
+            section.style.display = "block";
+        });
+    
+    }
+    </script>
+    
+</body>
+</html>
