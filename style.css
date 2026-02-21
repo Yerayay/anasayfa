@@ -228,15 +228,14 @@ footer {
 }
 
 .technopat:hover i {
-    background: #00ff88;
-    border-color: #00ff88;
+    background: #00bcd4;
+    border-color: #00bcd4;
 }
 
 .mcpsp:hover i {
     background: #00ff88;
     border-color: #00ff88;
-    background: #00bcd4;
-    border-color: #00bcd4;
+    
 }
 
 .copyright {
@@ -272,5 +271,6 @@ footer {
         flex-direction: column;
         gap: 25px;
     }
+
 
 }
