@@ -296,3 +296,63 @@ footer {
 .platform-card.all:hover .icon i {
     color: #ff9800;
 }
+/* ========================= */
+/* GPU DETECTOR MOBILE FIX */
+/* ========================= */
+
+/* Mobilde ortalama düzeltmesi */
+.platform-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px !important;
+}
+
+/* Tek kart gibi davranması için */
+.platform-card {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Uzun GPU isimleri taşmasın */
+.platform-card h2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Header mobil iyileştirme */
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 15px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .platform-container {
+        padding: 30px 15px !important;
+    }
+
+    .platform-card {
+        padding: 30px 15px;
+    }
+}
+
+/* Çok küçük ekranlar */
+@media (max-width: 400px) {
+
+    .platform-card h2 {
+        font-size: 1rem;
+    }
+
+    .icon i {
+        font-size: 2.2rem;
+    }
+}
