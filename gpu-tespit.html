@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GPU Gösterici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<header>
+    <h1>GPU ALGILAYICI</h1>
+    <p>Cihazınızın grafik birimi tespit edildi</p>
+</header>
+
+<section class="platform-container">
+    <div class="platform-card mobile" id="gpuCard">
+        <div class="icon">
+            <i class="fa-solid fa-microchip"></i>
+        </div>
+        <h2 id="gpuName">Tespit Ediliyor...</h2>
+        <span id="gpuInfo">Lütfen bekleyin</span>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="copyright">
+        © 2026 Yerayay
+    </div>
+</footer>
+
+<script>
+function getGPU() {
+    const canvas = document.createElement("canvas");
+    const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+
+    if (!gl) {
+        return "WebGL Desteklenmiyor";
+    }
+
+    const debugInfo = gl.getExtension("WEBGL_debug_renderer_info");
+
+    if (debugInfo) {
+        return gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+    }
+
+    return "GPU Bilgisi Gizli";
+}
+
+const gpu = getGPU();
+
+document.getElementById("gpuName").innerText = gpu;
+
+if (gpu.includes("Adreno")) {
+    document.getElementById("gpuInfo").innerText = "Qualcomm Snapdragon GPU";
+} 
+else if (gpu.includes("Mali")) {
+    document.getElementById("gpuInfo").innerText = "ARM Mali GPU";
+} 
+else if (gpu.includes("PowerVR")) {
+    document.getElementById("gpuInfo").innerText = "PowerVR GPU";
+} 
+else {
+    document.getElementById("gpuInfo").innerText = "Detaylı bilgi alınamadı";
+}
+</script>
+
+</body>
+</html>

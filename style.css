@@ -274,3 +274,25 @@ footer {
     }
 
 }
+/* GPU Kart Renkleri */
+
+.platform-card.mobile:hover {
+    border-color: #00c853;
+}
+.platform-card.mobile:hover .icon i {
+    color: #00c853;
+}
+
+.platform-card.pc:hover {
+    border-color: #00b0ff;
+}
+.platform-card.pc:hover .icon i {
+    color: #00b0ff;
+}
+
+.platform-card.all:hover {
+    border-color: #ff9800;
+}
+.platform-card.all:hover .icon i {
+    color: #ff9800;
+}
