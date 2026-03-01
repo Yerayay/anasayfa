@@ -271,3 +271,81 @@ footer {
     }
 
 }
+
+
+.platform-card.mobile:hover {
+    border-color: #00c853;
+}
+.platform-card.mobile:hover .icon i {
+    color: #00c853;
+}
+
+.platform-card.pc:hover {
+    border-color: #00b0ff;
+}
+.platform-card.pc:hover .icon i {
+    color: #00b0ff;
+}
+
+.platform-card.all:hover {
+    border-color: #ff9800;
+}
+.platform-card.all:hover .icon i {
+    color: #ff9800;
+}
+
+.platform-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px !important;
+}
+
+
+.platform-card {
+    width: 100%;
+    max-width: 420px;
+}
+
+
+.platform-card h2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 15px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .platform-container {
+        padding: 30px 15px !important;
+    }
+
+    .platform-card {
+        padding: 30px 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .platform-card h2 {
+        font-size: 1rem;
+    }
+
+    .icon i {
+        font-size: 2.2rem;
+    }
+}
