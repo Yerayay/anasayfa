@@ -16,8 +16,8 @@ function getGPU() {
 }
 
 const gpu = getGPU();
-
-document.getElementById("gpuName").innerText = gpu;
+setTimeout(function(){
+    document.getElementById("gpuName").innerText = gpu;
 
 if (gpu.includes("Adreno")) {
     document.getElementById("gpuInfo").innerText = "Adreno GPU";
@@ -31,3 +31,5 @@ else if (gpu.includes("PowerVR")) {
 else {
     document.getElementById("gpuInfo").innerText = "Detaylı bilgi alınamadı";
 }
+
+},1500);
