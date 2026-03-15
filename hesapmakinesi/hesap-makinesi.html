@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="hm.css">
+    <script src="hm.js" defer></script>
+</head>
+<body onload="body()">
+    <div id="diskutu">
+        <div id="ustkisim">
+        </div>
+        <div>
+        <input class="islemler" type="button" value="+" onclick="arti()">
+        <input class="islemler" type="button" value="-" onclick="eksi()">
+        <input class="islemler" type="button" value="x" onclick="carpi()">
+        <input class="islemler" type="button" value="÷" onclick="bolu()">
+        <input class="islemler" type="button" value="C" onclick="temizle()">
+    </div><br><br>
+        <div id="alttaraf" >
+            <input class="butonlar" id="bir" type="button" value="1" onclick="bir()">
+            <input class="butonlar" id="iki" type="button" value="2" onclick="iki()">
+            <input class="butonlar" id="uc" type="button" value="3" onclick="uc()">
+            <input class="butonlar" id="dort" type="button" value="4" onclick="dort()">
+            <input class="butonlar" id="bes" type="button" value="5" onclick="bes()">
+            <input class="butonlar" id="alti" type="button" value="6" onclick="alti()">
+            <input class="butonlar" id="yedi" type="button" value="7" onclick="yedi()">
+            <input class="butonlar" id="sekiz" type="button" value="8" onclick="sekiz()">
+            <input class="butonlar" id="dokuz" type="button" value="9" onclick="dokuz()">
+            <input class="butonlar" id="sifir" type="button" value="0" onclick="sifir()">
+            <input class="butonlar" id="sifir" type="button" value="=" onclick="hesapla()">
+        </div>
+        
+    </div>
+</body>
+</html>
