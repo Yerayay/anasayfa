@@ -15,6 +15,24 @@ function getGPU() {
     return "GPU Bilgisi Gizli";
 }
 
+var nokta = document.getElementById("nokta");
+
+setTimeout(function(){
+    nokta.innerHTML=".";
+
+}, 0400)
+
+setTimeout(function(){
+    nokta.innerHTML="..";
+
+}, 0800)
+
+setTimeout(function(){
+    nokta.innerHTML="...";
+
+}, 1200)
+
+
 const gpu = getGPU();
 setTimeout(function(){
     document.getElementById("gpuName").innerText = gpu;
