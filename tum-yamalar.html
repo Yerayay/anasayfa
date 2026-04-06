@@ -7,6 +7,19 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cards.css">
+    <script defer>
+document.addEventListener("click", function(e) {
+    let link = e.target.closest("a"); 
+
+    if (link) {
+        e.preventDefault(); 
+
+        setTimeout(() => {
+            window.location.href = link.href;
+        }, 1000); 
+    }
+});
+    </script>
     <style>
 
         
